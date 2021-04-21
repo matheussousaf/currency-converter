@@ -28,9 +28,6 @@ public class CurrencyController {
 	public ModelAndView main(@ModelAttribute Currency currency) {
 		ModelAndView view = new ModelAndView("main2");
 		
-		System.out.println("Massa demais" + currency.getCurrencyValue());
-		System.out.println("Valor" + currency.isDollarCurrentCurrency());
-		
 		view.addObject("result", currency.isDollarCurrentCurrency() ? currency.calculateDollarToReal() : currency.calculateRealToDollar() );
 		view.addObject("isDollar", currency.isDollarCurrentCurrency());
 		

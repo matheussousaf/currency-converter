@@ -111,11 +111,6 @@ main h2 {
 	font-style: italic;
 	color: #004d4d;	
 	cursor: pointer;
-	transition: .5s;
-}
-
-#check::after:hover {
-	color: #189b9b;
 }
 
 #result {
